@@ -1,0 +1,28 @@
+{
+    "title": "web前端-文档整理",
+    "description": "web前端文档是一个包含html,css,js,svg,canvas等",
+    "language": "zh-hans",
+    "plugins": [
+    ],
+    "pluginsConfig": {
+    },
+    "links": {
+        "gitbook": false,
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false,
+            "all": false
+        }
+    },
+    "pdf": { 
+      "pageNumbers": true, 
+      "fontSize": 13, 
+      "margin": { 
+        "right": 10, 
+        "left": 10, 
+        "top": 10, 
+        "bottom": 15 
+      } 
+    }
+}
