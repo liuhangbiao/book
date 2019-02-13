@@ -333,3 +333,9 @@ apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示设计
 ```
  <link rel="shortcut icon" href="<%= BASE_URL %>favicon.ico">
 ```
+
+
+
+```
+git pull && git add . && git commit -m 更新 && git push -u origin master
+```
