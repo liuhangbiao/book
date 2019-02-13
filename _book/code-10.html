@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="tab-1.html" />
+    <link rel="next" href="code-11.html" />
     
     
     <link rel="prev" href="code-9.html" />
@@ -479,6 +479,32 @@
             
         </li>
     
+        <li class="chapter " data-level="2.1.11" data-path="code-11.html">
+            
+                <a href="code-11.html">
+            
+                    
+                    JavaScript代码片段精选
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="code-12.html">
+            
+                <a href="code-12.html">
+            
+                    
+                    React代码片段精选
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -575,6 +601,38 @@
             
                     
                     适用于移动设备弹性布局的js脚本(rem单位)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="cp-1.html">
+            
+                <a href="cp-1.html">
+            
+                    
+                    整理摘录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="cp-1.html">
+            
+                <a href="cp-1.html">
+            
+                    
+                    JavaScript开发者应懂的33个概念
             
                 </a>
             
@@ -1875,6 +1933,24 @@ println(a); //-6,-2,-4,3,5,1,0
 var b = [1, -2, 3, -4, 5, -6, 0];
 sort2(b);
 println(b); //-2,-4,-6,1,5,3,0
+</code></pre><h3 id="&#x5E74;&#x9F84;&#x8BA1;&#x7B97;&#x5668;">&#x5E74;&#x9F84;&#x8BA1;&#x7B97;&#x5668;</h3>
+<pre><code>const years = ms =&gt; {
+  if (ms &lt; 0) ms = -ms;
+  const time = {
+    &#x5E74;:Math.floor(ms/365/86400000),
+    &#x5929;: Math.floor(ms / 86400000)%365,
+    &#x65F6;: Math.floor(ms / 3600000) % 24,
+    &#x5206;: Math.floor(ms / 60000) % 60,
+    &#x79D2;: Math.floor(ms / 1000) % 60,
+    &#x6BEB;&#x79D2;: Math.floor(ms) % 1000
+  };
+  return Object.entries(time)
+    .filter(val =&gt; val[1] !== 0)
+    .map(([key, val]) =&gt; `${val}${key}${val !== 1 ? &apos;&apos; : &apos;&apos;}`)
+    .join(&apos;&apos;);
+};
+
+years(new Date(&quot;1993-11-01&quot;)-new Date()) //25&#x5E74;109&#x5929;6&#x65F6;6&#x5206;6&#x79D2;934&#x6BEB;&#x79D2;
 </code></pre>
                                 
                                 </section>
@@ -1907,7 +1983,7 @@ println(b); //-2,-4,-6,1,5,3,0
                 </a>
                 
                 
-                <a href="tab-1.html" class="navigation navigation-next " aria-label="Next page: 常用对照表">
+                <a href="code-11.html" class="navigation navigation-next " aria-label="Next page: JavaScript代码片段精选">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1918,7 +1994,7 @@ println(b); //-2,-4,-6,1,5,3,0
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"js常用经典算法","level":"2.1.10","depth":2,"next":{"title":"常用对照表","level":"2.2","depth":1,"path":"tab-1.md","ref":"tab-1.md","articles":[{"title":"HTTP Content-type","level":"2.2.1","depth":2,"path":"tab-1.md","ref":"tab-1.md","articles":[]},{"title":"HTML 符号实体","level":"2.2.2","depth":2,"path":"tab-2.md","ref":"tab-2.md","articles":[]},{"title":"HTML ASCII 参考手册","level":"2.2.3","depth":2,"path":"tab-3.md","ref":"tab-3.md","articles":[]},{"title":"HTML URL 编码参考手册","level":"2.2.4","depth":2,"path":"tab-4.md","ref":"tab-4.md","articles":[]}]},"previous":{"title":"元件","level":"2.1.9","depth":2,"path":"code-9.md","ref":"code-9.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":13,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":15}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web前端-文档整理","language":"zh-hans","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"web前端文档是一个包含html,css,js,svg,canvas等"},"file":{"path":"code-10.md","mtime":"2019-01-30T07:05:42.711Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-12T00:58:02.623Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"js常用经典算法","level":"2.1.10","depth":2,"next":{"title":"JavaScript代码片段精选","level":"2.1.11","depth":2,"path":"code-11.md","ref":"code-11.md","articles":[]},"previous":{"title":"元件","level":"2.1.9","depth":2,"path":"code-9.md","ref":"code-9.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":13,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":10,"bottom":15}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web前端-文档整理","language":"zh-hans","links":{"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"web前端文档是一个包含html,css,js,svg,canvas等"},"file":{"path":"code-10.md","mtime":"2019-02-12T06:06:16.205Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-13T05:49:24.937Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1926,6 +2002,10 @@ println(b); //-2,-4,-6,1,5,3,0
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>

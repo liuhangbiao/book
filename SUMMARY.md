@@ -33,6 +33,8 @@
     - [模块](code-8.md)
     - [元件](code-9.md)
     - [js常用经典算法](code-10.md)
+    - [JavaScript代码片段精选](code-11.md)
+    - [React代码片段精选](code-12.md)
 
 * [常用对照表](tab-1.md)
     - [HTTP Content-type](tab-1.md)
@@ -42,3 +44,6 @@
 
 * [技术综合](lib-1.md)
     - [适用于移动设备弹性布局的js脚本(rem单位)](lib-1.md)
+
+* [整理摘录](cp-1.md)
+    - [JavaScript开发者应懂的33个概念](cp-1.md)

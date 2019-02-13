@@ -1396,3 +1396,25 @@ var b = [1, -2, 3, -4, 5, -6, 0];
 sort2(b);
 println(b); //-2,-4,-6,1,5,3,0
 ```
+
+
+### 年龄计算器
+```
+const years = ms => {
+  if (ms < 0) ms = -ms;
+  const time = {
+    年:Math.floor(ms/365/86400000),
+    天: Math.floor(ms / 86400000)%365,
+    时: Math.floor(ms / 3600000) % 24,
+    分: Math.floor(ms / 60000) % 60,
+    秒: Math.floor(ms / 1000) % 60,
+    毫秒: Math.floor(ms) % 1000
+  };
+  return Object.entries(time)
+    .filter(val => val[1] !== 0)
+    .map(([key, val]) => `${val}${key}${val !== 1 ? '' : ''}`)
+    .join('');
+};
+
+years(new Date("1993-11-01")-new Date()) //25年109天6时6分6秒934毫秒
+```
