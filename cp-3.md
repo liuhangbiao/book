@@ -1,7 +1,7 @@
 ## 常用错误解决
 
 
-* 解决npm ERR! Unexpected end of JSON input while parsing near的方法汇总
+###  解决npm ERR! Unexpected end of JSON input while parsing near的方法汇总
 
 ```
 1.删掉package.lock.json
@@ -10,7 +10,7 @@
 4.还原镜像（不要用淘宝镜像）=> npm set registry https://registry.npmjs.org/
 ```
 
-* 执行webpack报错=> Error: Cannot find module 'webpack/lib/node/NodeTemplatePlugin'
+### 执行webpack报错=> Error: Cannot find module 'webpack/lib/node/NodeTemplatePlugin'
 
 ```
 npm link webpack -D
@@ -18,7 +18,7 @@ npm link webpack -D
 
 
 
-* Vue项目兼容IE9以及ES6语法转换（一）
+### Vue项目兼容IE9以及ES6语法转换（一）
 ```
 原因：IE对ES6语法支持极差，IE也不支持promise，vuex,axios都依赖promise特性。
 
@@ -53,7 +53,7 @@ entry:{
 }
 ```
 
-* Vue 兼容 ie9 的全面解决方案（二）
+### Vue 兼容 ie9 的全面解决方案（二）
 
 ```
 问题描述：当vue遇见ie9的时候，部署到服务器之后，打开居然是一片空白，vue是支持ie9的，这个时候就需要做兼容处理
@@ -100,7 +100,9 @@ Vue 官方对于 ie 浏览器版本兼容情况的描述是 ie9+，即是 ie9 �
 在 main.js 中的最前面 引入:
     import 'es6-promise/auto'
 加入这些代码后，工程里的大部分内容已可兼容到 ie9 版本
+
 --------------------------------------------------------------------------
+
 其他情况：
 2. Number对象
     即使在使用 babel-polyfill 做代码翻译后，发现还是有一些 es6 的新特性并没有解决，比如说 Number 对象的 parseInt 和 parseFloat 方法
