@@ -1418,3 +1418,45 @@ const years = ms => {
 
 years(new Date("1993-11-01")-new Date()) //25年109天6时6分6秒934毫秒
 ```
+
+
+* DOM事件绑定
+
+```
+<!-- 声明函数时就指定适当的函数 -->
+var addEvent = (function() {
+    if (document.addEventListener) {
+        return function(type, element, fun) {
+            element.addEventListener(type, fun, false);
+        }
+    } else if (document.attachEvent) {
+        return function(type, element, fun) {
+            element.attachEvent('on' + type, fun);
+        }
+    } else {
+        return function(type, element, fun) {
+            element['on' + type] = fun;
+        }
+    }
+})();
+
+
+<!-- 惰性载入重写 （缺点：函数名称有所改变比较麻烦）-->
+function addEvent(type, element, fun) {
+    if (element.addEventListener) {
+        addEvent = function(type, element, fun) {
+            element.addEventListener(type, fun, false);
+        }
+    } else if (element.attachEvent) {
+        addEvent = function(type, element, fun) {
+            element.attachEvent('on' + type, fun);
+        }
+    } else {
+        addEvent = function(type, element, fun) {
+            element['on' + type] = fun;
+        }
+    }
+    return addEvent(type, element, fun);
+}
+
+```

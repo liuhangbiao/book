@@ -333,3 +333,20 @@ apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示设计
 ```
  <link rel="shortcut icon" href="<%= BASE_URL %>favicon.ico">
 ```
+
+> TODO
+
+- todo 待办事项; 备忘录
+- bug   问题
+- debug 调试
+- fix 已修复
+- fixme 待修复
+- hack 有安全隐患
+- idea 想法
+- note 笔记
+- optimize 最优化
+
+```
+// TODO: 表示在此处将要实现的功能，提醒你在后续阶段将会在此处添加代码
+// FIXME: 表示此处的代码逻辑有出入，或者根本不能运行，提醒你在后续阶段将会修改此处代码
+```
