@@ -1,28 +1,117 @@
 {
     "title": "web前端-文档整理",
+    "author": "道心",
     "description": "web前端文档是一个包含html,css,js,svg,canvas等",
     "language": "zh-hans",
-    "plugins": [
-    ],
-    "pluginsConfig": {
-    },
-    "links": {
+    "links":
+    {
+        "sidebar":
+        {
+            "道心博客": "https://liuhangbiao.com"
+        },
         "gitbook": false,
-        "sharing": {
+        "sharing":
+        {
             "google": false,
             "facebook": false,
             "twitter": false,
             "all": false
         }
     },
-    "pdf": { 
-      "pageNumbers": true, 
-      "fontSize": 13, 
-      "margin": { 
-        "right": 10, 
-        "left": 10, 
-        "top": 10, 
-        "bottom": 15 
-      } 
+    "styles":
+    {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    },
+    "plugins": [
+        "-sharing",
+        "github",
+        "github-buttons",
+        "donate",
+        "anchor-navigation-ex",
+        "code",
+        "hide-element",
+        "chapter-fold",
+        "splitter",
+        "pageview-count",
+        "tbfed-pagefooter",
+        "popup",
+        "sharing-plus"
+    ],
+    "pluginsConfig":
+    {
+        "github":
+        {
+            "url": "https://github.com/liuhangbiao"
+        },
+        "github-buttons":
+        {
+            "buttons": [
+            {
+                "user": "liuhangbiao",
+                "repo": "webapp",
+                "type": "star",
+                "size": "small",
+                "count": true
+            }]
+        },
+        "donate":
+        {
+            "wechat": "img/wx-pay.jpg",
+            "alipay": "img/zfb-pay.jpg",
+            "title": "",
+            "button": "赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
+        },
+        "anchor-navigation-ex":
+        {
+            "showLevel": false
+        },
+        "code":
+        {
+            "copyButtons": true
+        },
+        "hide-element":
+        {
+            "elements": [".gitbook-link"]
+        },
+        "tbfed-pagefooter":
+        {
+            "copyright": "Copyright @2020 by liuhangbiao.com",
+            "modify_label": "最后修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "sharing":
+        {
+            "douban": true,
+            "facebook": true,
+            "google": true,
+            "pocket": true,
+            "qq": true,
+            "qzone": true,
+            "twitter": true,
+            "weibo": true,
+            "whatsapp": true,
+            "all": [
+                "douban", "facebook", "google", "instapaper", "linkedin", "twitter", "weibo",
+                "messenger", "qq", "qzone", "viber", "whatsapp"
+            ]
+        },
+        "pdf":
+        {
+            "pageNumbers": true,
+            "fontSize": 13,
+            "margin":
+            {
+                "right": 10,
+                "left": 10,
+                "top": 10,
+                "bottom": 15
+            }
+        }
     }
 }

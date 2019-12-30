@@ -197,3 +197,18 @@ Vue 官方对于 ie 浏览器版本兼容情况的描述是 ie9+，即是 ie9 �
         该配置同样是将 http://localhost:8081/myserver/ 的目标服务端位置代理为本地服务的 /api 路径，如此，生产环境下的数据请求问题也得以解决
 
 ```
+
+
+### 使用了extract-text-webpack-plugin插件后，编译出错，信息如下 DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` instead
+
+解决方案：用的应该是webpack4吧，换成mini-css-extract-plugin就好了，用法：https://www.npmjs.com/package/mini-css-extract-plugin
+
+
+### 使用new webpack.optimize.UglifyJsPlugin()时报错Error: webpack.optimize.UglifyJsPlugin has been removed, please use config.optimization.minimize instead.
+
+解决方案：
+1.webpack内置的JS压缩插件不能使用了，可以安装uglifyjs-webpack-plugin插件，使用同其他非内置插件；
+
+2.--mode production 表示生产环境,只要配置在package.json的script里面 js自动就压缩了
+// Uglify是压缩js,现在已经不需要了,只需要在script里面写成
+// "build": "webpack --mode production", 就自动压缩了

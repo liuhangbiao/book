@@ -12,6 +12,8 @@
 
 * [js/ts/es等规范](js-1.md)
     - [js命名规范](js-1.md)
+    - [js代码片段](js-2.md)
+    - [js常用兼容代码](js-3.md)
 
 * [HTML规范](html-1.md)
     - [整体结构](html-1.md)
@@ -23,6 +25,7 @@
     - [开发准备](dev-1.md)
     - [开发过程](dev-2.md)
     - [开发产出](dev-3.md)
+    - [大型项目前端架构](dev-4.md)
 
 
 * [常用代码片断(代码库)](code-1.md)
@@ -46,9 +49,12 @@
     - [HTML 符号实体](tab-2.md)
     - [HTML ASCII 参考手册](tab-3.md)
     - [HTML URL 编码参考手册](tab-4.md)
+    - [javascript速查表](tab-5.md)
 
 * [技术综合](lib-1.md)
     - [适用于移动设备弹性布局的js脚本(rem单位)](lib-1.md)
+    - [检查一个对象是否为空(几种方式：遍历、keys、JSON、getOwnPropertyNames等)](lib-2.md)
+    - [基于原生JS移动端响应式解决方案](lib-3.md)
 
 * [整理摘录](cp-1.md)
     - [JavaScript开发者应懂的33个概念](cp-1.md)
@@ -62,6 +68,7 @@
     - [Linux 操作指南](cli-1.md)
     - [Docker 操作指南](cli-2.md)
     - [Nodejs 操作指南](cli-3.md)
+    - [Alpine Linux 操作指南](cli-4.md)
 
 * [资源目录](dir-1.md)
     - [前端资源汇总](dir-1.md)
