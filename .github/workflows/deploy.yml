@@ -16,13 +16,19 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: 测试node/npm version
+    - name: Build Package
       run: |
         node -v
         npm -v
         npm install gitbook-cli -g 
         gitbook install
         gitbook build . ./dist
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist
 # ------------------------------
 # name: Deploy CI
 # on:
