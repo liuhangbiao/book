@@ -16,8 +16,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: node -v
-    - run: npm -v
+      run: node -v
+      run: npm -v
 # ------------------------------
 # name: Deploy CI
 # on:
