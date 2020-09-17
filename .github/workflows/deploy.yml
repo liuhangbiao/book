@@ -6,17 +6,22 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: 12.16.1
     steps:
     - name: Checkout
       uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       with:
         persist-credentials: false
-    - name: Install gitbook-cli
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install and Build
       run: |
         sudo node -v
         sudo npm install gitbook-cli -g
-    - name: Build books
-      run: |
         sudo gitbook install
         sudo gitbook build . ./dist
     - name: Deploy
@@ -29,48 +34,59 @@ jobs:
 # FOLDER: _book
 # npm install
 # npm run-script build
-# 
+# -----------------------------------------------------------
+# name: Node.js CI
+# on:
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         node-version: [10.x, 12.x, 14.x]
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Use Node.js ${{ matrix.node-version }}
+#       uses: actions/setup-node@v1
+#       with:
+#         node-version: ${{ matrix.node-version }}
+#     - run: npm ci
+#     - run: npm run build --if-present
+#     - run: npm test
 # ------------------------------------------------------------
 # # .github/workflows/semantic-release.yml
-
 # # workflow name（在 Github Actions 控制面板中）
 # name: Actions Release
-
 # # event type（此处我们选择 push，且仅当 push 到 master 分支触发）
 # on:
 #   push:
 #     branches:
 #     - master
-
 # # 任务列表
 # jobs:
-
 #   # 任务名称
 #   release:
-
 #     # 在何种平台执行，可选 windows-latest/ubuntu-latest/macOS-latest 等
 #     runs-on: ubuntu-latest
-
 #     # 为了加速构建，我们使用同一个包含 Node.js 的容器运行所有命令
 #     container:
 #       image: thonatos/github-actions-nodejs
 
 #     # 这里定义了任务运行过程中的各个步骤
 #     steps:
-
 #     # 代码拉取
 #     - uses: actions/checkout@master
-
 #     # 依赖安装
 #     - name: Install Dependencies
 #       run: |
 #         npm install -g npminstall
 #         npminstall
-
 #     # 持续集成
 #     - name: Continuous integration
 #       run: npm run ci
-
 #     # 代码覆盖率
 #     - name: Code Coverage
 #       run: |
@@ -78,7 +94,6 @@ jobs:
 #         codecov
 #       env:
 #         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
 #     # NPM 包发布
 #     - name: Release NPN Package
 #       run: npm run semantic-release
