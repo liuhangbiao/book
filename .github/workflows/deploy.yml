@@ -20,6 +20,10 @@ jobs:
       run: |
         node -v
         npm -v
+        sudo node -v 
+        sudo npm install gitbook-cli -g 
+        sudo gitbook install
+        sudo gitbook build . ./dist
 # ------------------------------
 # name: Deploy CI
 # on:
