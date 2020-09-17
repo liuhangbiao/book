@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实体编号</title>
+	<style>*{padding: 0;margin: 0;list-style: none}</style>
+</head>
+<body>
+	<div id="yy"></div>
+	<script>
+		var kk="";
+		for (var i = 33; i < 50000; i++) {
+			kk+='<li>&amp;#'+i+'; | &#'+i+';</li>'
+		}
+		document.getElementById('yy').innerHTML=kk;
+	</script>
+</body>
+</html>
