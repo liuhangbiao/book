@@ -13,11 +13,12 @@ jobs:
         persist-credentials: false
     - name: Install gitbook-cli
       run: |
+        sudo node -v
         sudo npm install gitbook-cli -g
     - name: Build books
       run: |
-        gitbook install
-        gitbook build . ./dist
+        sudo gitbook install
+        sudo gitbook build . ./dist
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
@@ -25,6 +26,62 @@ jobs:
         BRANCH: gh-pages
         FOLDER: dist
 
-# FOLDER: _books
+# FOLDER: _book
 # npm install
 # npm run-script build
+# 
+# ------------------------------------------------------------
+# # .github/workflows/semantic-release.yml
+
+# # workflow name（在 Github Actions 控制面板中）
+# name: Actions Release
+
+# # event type（此处我们选择 push，且仅当 push 到 master 分支触发）
+# on:
+#   push:
+#     branches:
+#     - master
+
+# # 任务列表
+# jobs:
+
+#   # 任务名称
+#   release:
+
+#     # 在何种平台执行，可选 windows-latest/ubuntu-latest/macOS-latest 等
+#     runs-on: ubuntu-latest
+
+#     # 为了加速构建，我们使用同一个包含 Node.js 的容器运行所有命令
+#     container:
+#       image: thonatos/github-actions-nodejs
+
+#     # 这里定义了任务运行过程中的各个步骤
+#     steps:
+
+#     # 代码拉取
+#     - uses: actions/checkout@master
+
+#     # 依赖安装
+#     - name: Install Dependencies
+#       run: |
+#         npm install -g npminstall
+#         npminstall
+
+#     # 持续集成
+#     - name: Continuous integration
+#       run: npm run ci
+
+#     # 代码覆盖率
+#     - name: Code Coverage
+#       run: |
+#         npm install codecov -g
+#         codecov
+#       env:
+#         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+#     # NPM 包发布
+#     - name: Release NPN Package
+#       run: npm run semantic-release
+#       env:
+#         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
