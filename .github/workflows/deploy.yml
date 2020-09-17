@@ -15,12 +15,12 @@ jobs:
       with:
         node-version: '12.16.1'
     - name: Install and Build
-    - run: |
+      run: |
         sudo node -v 
         sudo npm install gitbook-cli -g 
         sudo gitbook install
         sudo gitbook build . ./dist
-        
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
