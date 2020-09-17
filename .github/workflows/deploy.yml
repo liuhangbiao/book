@@ -13,7 +13,7 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
-        npm install gitbook-cli -g
+        sudo npm install gitbook-cli -g
         gitbook build . ./dist
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
