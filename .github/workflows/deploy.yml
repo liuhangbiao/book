@@ -11,9 +11,11 @@ jobs:
       uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       with:
         persist-credentials: false
-    - name: Install and Build
+    - name: Install gitbook-cli
       run: |
         sudo npm install gitbook-cli -g
+    - name: Build books
+      run: |
         gitbook build . ./dist
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
