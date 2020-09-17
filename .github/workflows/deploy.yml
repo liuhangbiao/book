@@ -18,7 +18,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-      run: |
+    - run: |
         sudo node -v
         sudo npm install gitbook-cli -g
         sudo gitbook install
