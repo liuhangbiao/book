@@ -13,13 +13,14 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: |
-        # npm install
         npm install gitbook-cli -g
         gitbook build . ./dist
-        # npm run-script build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: dist
+
+# npm install
+# npm run-script build
