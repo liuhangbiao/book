@@ -1,6 +1,6 @@
 # Summary
 
-* [web开发规范](README.md)
+* [web开发规范](web.md)
 
 * [css规范](css-1.md)
     - [分类方法](css-1.md)
