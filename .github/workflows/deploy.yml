@@ -1,32 +1,53 @@
-name: Deploy CI
+name: Node.js CI
 on:
   push:
-    branches:
-      - master
+    branches: master
+  pull_request:
+    branches: master
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.16.1]
     steps:
-    - name: Checkout
     - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
       with:
-        persist-credentials: false
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12.16.1'
-    - name: Install and Build
-      run: |
-        sudo node -v 
-        sudo npm install gitbook-cli -g 
-        sudo gitbook install
-        sudo gitbook build . ./dist
+        node-version: ${{ matrix.node-version }}
+    - run: node -v
+    - run: npm -v
+# ------------------------------
+# name: Deploy CI
+# on:
+#   push:
+#     branches:
+#       - master
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout
+#     - uses: actions/checkout@v2
+#       with:
+#         persist-credentials: false
+#     - uses: actions/setup-node@v1
+#       with:
+#         node-version: '12.16.1'
+#     - name: Install and Build
+#       run: |
+#         sudo node -v 
+#         sudo npm install gitbook-cli -g 
+#         sudo gitbook install
+#         sudo gitbook build . ./dist
 
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: dist
+#     - name: Deploy
+#       uses: JamesIves/github-pages-deploy-action@releases/v3
+#       with:
+#         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#         BRANCH: gh-pages
+#         FOLDER: dist
 
 # https://github.com/actions/setup-node
 # FOLDER: _book
