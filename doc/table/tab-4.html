@@ -1,0 +1,2285 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HTML URL 编码参考手册 · web前端-文档整理</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="道心">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tab-5.html" />
+    
+    
+    <link rel="prev" href="tab-3.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"liuhangbiao","repo":"webapp","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://dao.y26.net" target="_blank" class="custom-link">道心博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    关于
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../web.html">
+            
+                <a href="../../web.html">
+            
+                    
+                    web开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../css/css-1.html">
+            
+                <a href="../css/css-1.html">
+            
+                    
+                    css规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../css/css-1.html">
+            
+                <a href="../css/css-1.html">
+            
+                    
+                    分类方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../css/css-2.html">
+            
+                <a href="../css/css-2.html">
+            
+                    
+                    命名规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../css/css-3.html">
+            
+                <a href="../css/css-3.html">
+            
+                    
+                    代码格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../css/css-4.html">
+            
+                <a href="../css/css-4.html">
+            
+                    
+                    优化方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../css/css-5.html">
+            
+                <a href="../css/css-5.html">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../css/css-6.html">
+            
+                <a href="../css/css-6.html">
+            
+                    
+                    典型错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../other/js-1.html">
+            
+                <a href="../other/js-1.html">
+            
+                    
+                    js/ts/es等规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../other/js-1.html">
+            
+                <a href="../other/js-1.html">
+            
+                    
+                    js命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../other/js-2.html">
+            
+                <a href="../other/js-2.html">
+            
+                    
+                    js代码片段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../other/js-3.html">
+            
+                <a href="../other/js-3.html">
+            
+                    
+                    js常用兼容代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../html/html-1.html">
+            
+                <a href="../html/html-1.html">
+            
+                    
+                    HTML规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../html/html-1.html">
+            
+                <a href="../html/html-1.html">
+            
+                    
+                    整体结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../html/html-2.html">
+            
+                <a href="../html/html-2.html">
+            
+                    
+                    代码格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../html/html-3.html">
+            
+                <a href="../html/html-3.html">
+            
+                    
+                    内容语义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../html/html-4.html">
+            
+                <a href="../html/html-4.html">
+            
+                    
+                    邮件内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../other/dev-1.html">
+            
+                <a href="../other/dev-1.html">
+            
+                    
+                    工程师规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../other/dev-1.html">
+            
+                <a href="../other/dev-1.html">
+            
+                    
+                    开发准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../other/dev-2.html">
+            
+                <a href="../other/dev-2.html">
+            
+                    
+                    开发过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../other/dev-3.html">
+            
+                <a href="../other/dev-3.html">
+            
+                    
+                    开发产出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../other/dev-4.html">
+            
+                <a href="../other/dev-4.html">
+            
+                    
+                    大型项目前端架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../code/code-1.html">
+            
+                <a href="../code/code-1.html">
+            
+                    
+                    常用代码片断(代码库)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../code/code-1.html">
+            
+                <a href="../code/code-1.html">
+            
+                    
+                    重置样式(css reset)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../code/code-2.html">
+            
+                <a href="../code/code-2.html">
+            
+                    
+                    功能样式(css function)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../code/code-3.html">
+            
+                <a href="../code/code-3.html">
+            
+                    
+                    媒体查询(css media)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../code/code-4.html">
+            
+                <a href="../code/code-4.html">
+            
+                    
+                    常见动画(css animation)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../code/code-5.html">
+            
+                <a href="../code/code-5.html">
+            
+                    
+                    HTML基础模板(html template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../code/code-6.html">
+            
+                <a href="../code/code-6.html">
+            
+                    
+                    邮件内容HTML模板(html email)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../code/code-7.html">
+            
+                <a href="../code/code-7.html">
+            
+                    
+                    布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../code/code-8.html">
+            
+                <a href="../code/code-8.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../code/code-9.html">
+            
+                <a href="../code/code-9.html">
+            
+                    
+                    元件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../code/code-10.html">
+            
+                <a href="../code/code-10.html">
+            
+                    
+                    js常用经典算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../code/code-11.html">
+            
+                <a href="../code/code-11.html">
+            
+                    
+                    JavaScript代码片段精选
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../code/code-12.html">
+            
+                <a href="../code/code-12.html">
+            
+                    
+                    React代码片段精选
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../code/code-13.html">
+            
+                <a href="../code/code-13.html">
+            
+                    
+                    乱七八糟-常用片段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../code/code-14.html">
+            
+                <a href="../code/code-14.html">
+            
+                    
+                    Vue代码片段精选
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="tab-1.html">
+            
+                <a href="tab-1.html">
+            
+                    
+                    常用对照表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="tab-1.html">
+            
+                <a href="tab-1.html">
+            
+                    
+                    HTTP Content-type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="tab-2.html">
+            
+                <a href="tab-2.html">
+            
+                    
+                    HTML 符号实体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="tab-3.html">
+            
+                <a href="tab-3.html">
+            
+                    
+                    HTML ASCII 参考手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.4" data-path="tab-4.html">
+            
+                <a href="tab-4.html">
+            
+                    
+                    HTML URL 编码参考手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="tab-5.html">
+            
+                <a href="tab-5.html">
+            
+                    
+                    javascript速查表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../other/lib-1.html">
+            
+                <a href="../other/lib-1.html">
+            
+                    
+                    技术综合
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../other/lib-1.html">
+            
+                <a href="../other/lib-1.html">
+            
+                    
+                    适用于移动设备弹性布局的js脚本(rem单位)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../other/lib-2.html">
+            
+                <a href="../other/lib-2.html">
+            
+                    
+                    检查一个对象是否为空(几种方式：遍历、keys、JSON、getOwnPropertyNames等)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../other/lib-3.html">
+            
+                <a href="../other/lib-3.html">
+            
+                    
+                    基于原生JS移动端响应式解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../other/cp-1.html">
+            
+                <a href="../other/cp-1.html">
+            
+                    
+                    整理摘录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../other/cp-1.html">
+            
+                <a href="../other/cp-1.html">
+            
+                    
+                    JavaScript开发者应懂的33个概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../other/cp-2.html">
+            
+                <a href="../other/cp-2.html">
+            
+                    
+                    JavaScript编码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../other/cp-3.html">
+            
+                <a href="../other/cp-3.html">
+            
+                    
+                    常用错误解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../other/d3-1.html">
+            
+                <a href="../other/d3-1.html">
+            
+                    
+                    D3 探索
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../other/d3-2.html">
+            
+                <a href="../other/d3-2.html">
+            
+                    
+                    D3 API - Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../other/cli-1.html">
+            
+                <a href="../other/cli-1.html">
+            
+                    
+                    操作指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../other/cli-1.html">
+            
+                <a href="../other/cli-1.html">
+            
+                    
+                    Linux 操作指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../other/cli-2.html">
+            
+                <a href="../other/cli-2.html">
+            
+                    
+                    Docker 操作指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../other/cli-3.html">
+            
+                <a href="../other/cli-3.html">
+            
+                    
+                    Nodejs 操作指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="../other/cli-4.html">
+            
+                <a href="../other/cli-4.html">
+            
+                    
+                    Alpine Linux 操作指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../other/dir-1.html">
+            
+                <a href="../other/dir-1.html">
+            
+                    
+                    资源目录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../other/dir-1.html">
+            
+                <a href="../other/dir-1.html">
+            
+                    
+                    前端资源汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../other/dir-2.html">
+            
+                <a href="../other/dir-2.html">
+            
+                    
+                    Vue 资源汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../other/dir-3.html">
+            
+                <a href="../other/dir-3.html">
+            
+                    
+                    React 资源汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../awesome/">
+            
+                <a href="../awesome/">
+            
+                    
+                    Awesome
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >HTML URL 编码参考手册</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#html-url-&#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;"><b></b>HTML URL &#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="html-url-&#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;"><a name="html-url-&#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;" class="anchor-navigation-ex-anchor" href="#html-url-&#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;"><i class="fa fa-link" aria-hidden="true"></i></a>HTML URL &#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;</h3>
+<table>
+<thead>
+<tr>
+<th>ASCII &#x5B57;&#x7B26;</th>
+<th>URL-&#x7F16;&#x7801;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>space</td>
+<td>%20</td>
+</tr>
+<tr>
+<td>!</td>
+<td>%21</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>%22</td>
+</tr>
+<tr>
+<td>#</td>
+<td>%23</td>
+</tr>
+<tr>
+<td>$</td>
+<td>%24</td>
+</tr>
+<tr>
+<td>%</td>
+<td>%25</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>%26</td>
+</tr>
+<tr>
+<td>&apos;</td>
+<td>%27</td>
+</tr>
+<tr>
+<td>(</td>
+<td>%28</td>
+</tr>
+<tr>
+<td>)</td>
+<td>%29</td>
+</tr>
+<tr>
+<td>*</td>
+<td>%2A</td>
+</tr>
+<tr>
+<td>+</td>
+<td>%2B</td>
+</tr>
+<tr>
+<td>,</td>
+<td>%2C</td>
+</tr>
+<tr>
+<td>-</td>
+<td>%2D</td>
+</tr>
+<tr>
+<td>.</td>
+<td>%2E</td>
+</tr>
+<tr>
+<td>/</td>
+<td>%2F</td>
+</tr>
+<tr>
+<td>0</td>
+<td>%30</td>
+</tr>
+<tr>
+<td>1</td>
+<td>%31</td>
+</tr>
+<tr>
+<td>2</td>
+<td>%32</td>
+</tr>
+<tr>
+<td>3</td>
+<td>%33</td>
+</tr>
+<tr>
+<td>4</td>
+<td>%34</td>
+</tr>
+<tr>
+<td>5</td>
+<td>%35</td>
+</tr>
+<tr>
+<td>6</td>
+<td>%36</td>
+</tr>
+<tr>
+<td>7</td>
+<td>%37</td>
+</tr>
+<tr>
+<td>8</td>
+<td>%38</td>
+</tr>
+<tr>
+<td>9</td>
+<td>%39</td>
+</tr>
+<tr>
+<td>:</td>
+<td>%3A</td>
+</tr>
+<tr>
+<td>;</td>
+<td>%3B</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>%3C</td>
+</tr>
+<tr>
+<td>=</td>
+<td>%3D</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>%3E</td>
+</tr>
+<tr>
+<td>?</td>
+<td>%3F</td>
+</tr>
+<tr>
+<td>@</td>
+<td>%40</td>
+</tr>
+<tr>
+<td>A</td>
+<td>%41</td>
+</tr>
+<tr>
+<td>B</td>
+<td>%42</td>
+</tr>
+<tr>
+<td>C</td>
+<td>%43</td>
+</tr>
+<tr>
+<td>D</td>
+<td>%44</td>
+</tr>
+<tr>
+<td>E</td>
+<td>%45</td>
+</tr>
+<tr>
+<td>F</td>
+<td>%46</td>
+</tr>
+<tr>
+<td>G</td>
+<td>%47</td>
+</tr>
+<tr>
+<td>H</td>
+<td>%48</td>
+</tr>
+<tr>
+<td>I</td>
+<td>%49</td>
+</tr>
+<tr>
+<td>J</td>
+<td>%4A</td>
+</tr>
+<tr>
+<td>K</td>
+<td>%4B</td>
+</tr>
+<tr>
+<td>L</td>
+<td>%4C</td>
+</tr>
+<tr>
+<td>M</td>
+<td>%4D</td>
+</tr>
+<tr>
+<td>N</td>
+<td>%4E</td>
+</tr>
+<tr>
+<td>O</td>
+<td>%4F</td>
+</tr>
+<tr>
+<td>P</td>
+<td>%50</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>%51</td>
+</tr>
+<tr>
+<td>R</td>
+<td>%52</td>
+</tr>
+<tr>
+<td>S</td>
+<td>%53</td>
+</tr>
+<tr>
+<td>T</td>
+<td>%54</td>
+</tr>
+<tr>
+<td>U</td>
+<td>%55</td>
+</tr>
+<tr>
+<td>V</td>
+<td>%56</td>
+</tr>
+<tr>
+<td>W</td>
+<td>%57</td>
+</tr>
+<tr>
+<td>X</td>
+<td>%58</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>%59</td>
+</tr>
+<tr>
+<td>Z</td>
+<td>%5A</td>
+</tr>
+<tr>
+<td>[</td>
+<td>%5B</td>
+</tr>
+<tr>
+<td>\</td>
+<td>%5C</td>
+</tr>
+<tr>
+<td>]</td>
+<td>%5D</td>
+</tr>
+<tr>
+<td>^</td>
+<td>%5E</td>
+</tr>
+<tr>
+<td>_</td>
+<td>%5F</td>
+</tr>
+<tr>
+<td>`</td>
+<td>%60</td>
+</tr>
+<tr>
+<td>a</td>
+<td>%61</td>
+</tr>
+<tr>
+<td>b</td>
+<td>%62</td>
+</tr>
+<tr>
+<td>c</td>
+<td>%63</td>
+</tr>
+<tr>
+<td>d</td>
+<td>%64</td>
+</tr>
+<tr>
+<td>e</td>
+<td>%65</td>
+</tr>
+<tr>
+<td>f</td>
+<td>%66</td>
+</tr>
+<tr>
+<td>g</td>
+<td>%67</td>
+</tr>
+<tr>
+<td>h</td>
+<td>%68</td>
+</tr>
+<tr>
+<td>i</td>
+<td>%69</td>
+</tr>
+<tr>
+<td>j</td>
+<td>%6A</td>
+</tr>
+<tr>
+<td>k</td>
+<td>%6B</td>
+</tr>
+<tr>
+<td>l</td>
+<td>%6C</td>
+</tr>
+<tr>
+<td>m</td>
+<td>%6D</td>
+</tr>
+<tr>
+<td>n</td>
+<td>%6E</td>
+</tr>
+<tr>
+<td>o</td>
+<td>%6F</td>
+</tr>
+<tr>
+<td>p</td>
+<td>%70</td>
+</tr>
+<tr>
+<td>q</td>
+<td>%71</td>
+</tr>
+<tr>
+<td>r</td>
+<td>%72</td>
+</tr>
+<tr>
+<td>s</td>
+<td>%73</td>
+</tr>
+<tr>
+<td>t</td>
+<td>%74</td>
+</tr>
+<tr>
+<td>u</td>
+<td>%75</td>
+</tr>
+<tr>
+<td>v</td>
+<td>%76</td>
+</tr>
+<tr>
+<td>w</td>
+<td>%77</td>
+</tr>
+<tr>
+<td>x</td>
+<td>%78</td>
+</tr>
+<tr>
+<td>y</td>
+<td>%79</td>
+</tr>
+<tr>
+<td>z</td>
+<td>%7A</td>
+</tr>
+<tr>
+<td>{</td>
+<td>%7B</td>
+</tr>
+<tr>
+<td>&#x7AD6;&#x7EBF;</td>
+<td>%7C</td>
+</tr>
+<tr>
+<td>}</td>
+<td>%7D</td>
+</tr>
+<tr>
+<td>~</td>
+<td>%7E</td>
+</tr>
+<tr>
+<td></td>
+<td>%7F</td>
+</tr>
+<tr>
+<td>`</td>
+<td>%80</td>
+</tr>
+<tr>
+<td>&#x81;</td>
+<td>%81</td>
+</tr>
+<tr>
+<td>&#x201A;</td>
+<td>%82</td>
+</tr>
+<tr>
+<td>&#x192;</td>
+<td>%83</td>
+</tr>
+<tr>
+<td>&#x201E;</td>
+<td>%84</td>
+</tr>
+<tr>
+<td>&#x2026;</td>
+<td>%85</td>
+</tr>
+<tr>
+<td>&#x2020;</td>
+<td>%86</td>
+</tr>
+<tr>
+<td>&#x2021;</td>
+<td>%87</td>
+</tr>
+<tr>
+<td>&#x2C6;</td>
+<td>%88</td>
+</tr>
+<tr>
+<td>&#x2030;</td>
+<td>%89</td>
+</tr>
+<tr>
+<td>&#x160;</td>
+<td>%8A</td>
+</tr>
+<tr>
+<td>&#x2039;</td>
+<td>%8B</td>
+</tr>
+<tr>
+<td>&#x152;</td>
+<td>%8C</td>
+</tr>
+<tr>
+<td>&#x8D;</td>
+<td>%8D</td>
+</tr>
+<tr>
+<td>&#x17D;</td>
+<td>%8E</td>
+</tr>
+<tr>
+<td>&#x8F;</td>
+<td>%8F</td>
+</tr>
+<tr>
+<td>&#x90;</td>
+<td>%90</td>
+</tr>
+<tr>
+<td>&apos;</td>
+<td>%91</td>
+</tr>
+<tr>
+<td>&apos;</td>
+<td>%92</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>%93</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>%94</td>
+</tr>
+<tr>
+<td>&#x2022;</td>
+<td>%95</td>
+</tr>
+<tr>
+<td>&#x2013;</td>
+<td>%96</td>
+</tr>
+<tr>
+<td>&#x2014;</td>
+<td>%97</td>
+</tr>
+<tr>
+<td>&#x2DC;</td>
+<td>%98</td>
+</tr>
+<tr>
+<td>&#x2122;</td>
+<td>%99</td>
+</tr>
+<tr>
+<td>&#x161;</td>
+<td>%9A</td>
+</tr>
+<tr>
+<td>&#x203A;</td>
+<td>%9B</td>
+</tr>
+<tr>
+<td>&#x153;</td>
+<td>%9C</td>
+</tr>
+<tr>
+<td>&#x9D;</td>
+<td>%9D</td>
+</tr>
+<tr>
+<td>&#x17E;</td>
+<td>%9E</td>
+</tr>
+<tr>
+<td>&#x178;</td>
+<td>%9F</td>
+</tr>
+<tr>
+<td></td>
+<td>%A0</td>
+</tr>
+<tr>
+<td>&#xA1;</td>
+<td>%A1</td>
+</tr>
+<tr>
+<td>&#xA2;</td>
+<td>%A2</td>
+</tr>
+<tr>
+<td>&#xA3;</td>
+<td>%A3</td>
+</tr>
+<tr>
+<td>&#xA4;</td>
+<td>%A4</td>
+</tr>
+<tr>
+<td>&#xA5;</td>
+<td>%A5</td>
+</tr>
+<tr>
+<td>&#xA6;</td>
+<td>%A6</td>
+</tr>
+<tr>
+<td>&#xA7;</td>
+<td>%A7</td>
+</tr>
+<tr>
+<td>&#xA8;</td>
+<td>%A8</td>
+</tr>
+<tr>
+<td>&#xA9;</td>
+<td>%A9</td>
+</tr>
+<tr>
+<td>&#xAA;</td>
+<td>%AA</td>
+</tr>
+<tr>
+<td>&#xAB;</td>
+<td>%AB</td>
+</tr>
+<tr>
+<td>&#xAC;</td>
+<td>%AC</td>
+</tr>
+<tr>
+<td>&#x7A7A;&#x683C;</td>
+<td>%AD</td>
+</tr>
+<tr>
+<td>&#xAE;</td>
+<td>%AE</td>
+</tr>
+<tr>
+<td>&#xAF;</td>
+<td>%AF</td>
+</tr>
+<tr>
+<td>&#xB0;</td>
+<td>%B0</td>
+</tr>
+<tr>
+<td>&#xB1;</td>
+<td>%B1</td>
+</tr>
+<tr>
+<td>&#xB2;</td>
+<td>%B2</td>
+</tr>
+<tr>
+<td>&#xB3;</td>
+<td>%B3</td>
+</tr>
+<tr>
+<td>&#xB4;</td>
+<td>%B4</td>
+</tr>
+<tr>
+<td>&#xB5;</td>
+<td>%B5</td>
+</tr>
+<tr>
+<td>&#xB6;</td>
+<td>%B6</td>
+</tr>
+<tr>
+<td>&#xB7;</td>
+<td>%B7</td>
+</tr>
+<tr>
+<td>&#xB8;</td>
+<td>%B8</td>
+</tr>
+<tr>
+<td>&#xB9;</td>
+<td>%B9</td>
+</tr>
+<tr>
+<td>&#xBA;</td>
+<td>%BA</td>
+</tr>
+<tr>
+<td>&#xBB;</td>
+<td>%BB</td>
+</tr>
+<tr>
+<td>&#xBC;</td>
+<td>%BC</td>
+</tr>
+<tr>
+<td>&#xBD;</td>
+<td>%BD</td>
+</tr>
+<tr>
+<td>&#xBE;</td>
+<td>%BE</td>
+</tr>
+<tr>
+<td>&#xBF;</td>
+<td>%BF</td>
+</tr>
+<tr>
+<td>&#xC0;</td>
+<td>%C0</td>
+</tr>
+<tr>
+<td>&#xC1;</td>
+<td>%C1</td>
+</tr>
+<tr>
+<td>&#xC2;</td>
+<td>%C2</td>
+</tr>
+<tr>
+<td>&#xC3;</td>
+<td>%C3</td>
+</tr>
+<tr>
+<td>&#xC4;</td>
+<td>%C4</td>
+</tr>
+<tr>
+<td>&#xC5;</td>
+<td>%C5</td>
+</tr>
+<tr>
+<td>&#xC6;</td>
+<td>%C6</td>
+</tr>
+<tr>
+<td>&#xC7;</td>
+<td>%C7</td>
+</tr>
+<tr>
+<td>&#xC8;</td>
+<td>%C8</td>
+</tr>
+<tr>
+<td>&#xC9;</td>
+<td>%C9</td>
+</tr>
+<tr>
+<td>&#xCA;</td>
+<td>%CA</td>
+</tr>
+<tr>
+<td>&#xCB;</td>
+<td>%CB</td>
+</tr>
+<tr>
+<td>&#xCC;</td>
+<td>%CC</td>
+</tr>
+<tr>
+<td>&#xCD;</td>
+<td>%CD</td>
+</tr>
+<tr>
+<td>&#xCE;</td>
+<td>%CE</td>
+</tr>
+<tr>
+<td>&#xCF;</td>
+<td>%CF</td>
+</tr>
+<tr>
+<td>&#xD0;</td>
+<td>%D0</td>
+</tr>
+<tr>
+<td>&#xD1;</td>
+<td>%D1</td>
+</tr>
+<tr>
+<td>&#xD2;</td>
+<td>%D2</td>
+</tr>
+<tr>
+<td>&#xD3;</td>
+<td>%D3</td>
+</tr>
+<tr>
+<td>&#xD4;</td>
+<td>%D4</td>
+</tr>
+<tr>
+<td>&#xD5;</td>
+<td>%D5</td>
+</tr>
+<tr>
+<td>&#xD6;</td>
+<td>%D6</td>
+</tr>
+<tr>
+<td>&#xD7;</td>
+<td>%D7</td>
+</tr>
+<tr>
+<td>&#xD8;</td>
+<td>%D8</td>
+</tr>
+<tr>
+<td>&#xD9;</td>
+<td>%D9</td>
+</tr>
+<tr>
+<td>&#xDA;</td>
+<td>%DA</td>
+</tr>
+<tr>
+<td>&#xDB;</td>
+<td>%DB</td>
+</tr>
+<tr>
+<td>&#xDC;</td>
+<td>%DC</td>
+</tr>
+<tr>
+<td>&#xDD;</td>
+<td>%DD</td>
+</tr>
+<tr>
+<td>&#xDE;</td>
+<td>%DE</td>
+</tr>
+<tr>
+<td>&#xDF;</td>
+<td>%DF</td>
+</tr>
+<tr>
+<td>&#xE0;</td>
+<td>%E0</td>
+</tr>
+<tr>
+<td>&#xE1;</td>
+<td>%E1</td>
+</tr>
+<tr>
+<td>&#xE2;</td>
+<td>%E2</td>
+</tr>
+<tr>
+<td>&#xE3;</td>
+<td>%E3</td>
+</tr>
+<tr>
+<td>&#xE4;</td>
+<td>%E4</td>
+</tr>
+<tr>
+<td>&#xE5;</td>
+<td>%E5</td>
+</tr>
+<tr>
+<td>&#xE6;</td>
+<td>%E6</td>
+</tr>
+<tr>
+<td>&#xE7;</td>
+<td>%E7</td>
+</tr>
+<tr>
+<td>&#xE8;</td>
+<td>%E8</td>
+</tr>
+<tr>
+<td>&#xE9;</td>
+<td>%E9</td>
+</tr>
+<tr>
+<td>&#xEA;</td>
+<td>%EA</td>
+</tr>
+<tr>
+<td>&#xEB;</td>
+<td>%EB</td>
+</tr>
+<tr>
+<td>&#xEC;</td>
+<td>%EC</td>
+</tr>
+<tr>
+<td>&#xED;</td>
+<td>%ED</td>
+</tr>
+<tr>
+<td>&#xEE;</td>
+<td>%EE</td>
+</tr>
+<tr>
+<td>&#xEF;</td>
+<td>%EF</td>
+</tr>
+<tr>
+<td>&#xF0;</td>
+<td>%F0</td>
+</tr>
+<tr>
+<td>&#xF1;</td>
+<td>%F1</td>
+</tr>
+<tr>
+<td>&#xF2;</td>
+<td>%F2</td>
+</tr>
+<tr>
+<td>&#xF3;</td>
+<td>%F3</td>
+</tr>
+<tr>
+<td>&#xF4;</td>
+<td>%F4</td>
+</tr>
+<tr>
+<td>&#xF5;</td>
+<td>%F5</td>
+</tr>
+<tr>
+<td>&#xF6;</td>
+<td>%F6</td>
+</tr>
+<tr>
+<td>&#xF7;</td>
+<td>%F7</td>
+</tr>
+<tr>
+<td>&#xF8;</td>
+<td>%F8</td>
+</tr>
+<tr>
+<td>&#xF9;</td>
+<td>%F9</td>
+</tr>
+<tr>
+<td>&#xFA;</td>
+<td>%FA</td>
+</tr>
+<tr>
+<td>&#xFB;</td>
+<td>%FB</td>
+</tr>
+<tr>
+<td>&#xFC;</td>
+<td>%FC</td>
+</tr>
+<tr>
+<td>&#xFD;</td>
+<td>%FD</td>
+</tr>
+<tr>
+<td>&#xFE;</td>
+<td>%FE</td>
+</tr>
+<tr>
+<td>&#xFF;</td>
+<td>%FF</td>
+</tr>
+</tbody>
+</table>
+<h4 id="url-&#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;"><a name="url-&#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;" class="anchor-navigation-ex-anchor" href="#url-&#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;"><i class="fa fa-link" aria-hidden="true"></i></a>URL &#x7F16;&#x7801;&#x53C2;&#x8003;&#x624B;&#x518C;</h4>
+<p>ASCII &#x8BBE;&#x5907;&#x63A7;&#x5236;&#x5B57;&#x7B26;&#x6700;&#x521D;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x7528;&#x6765;&#x63A7;&#x5236;&#x8BF8;&#x5982;&#x6253;&#x5370;&#x673A;&#x548C;&#x78C1;&#x5E26;&#x9A71;&#x52A8;&#x5668;&#x4E4B;&#x7C7B;&#x7684;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x3002;&#x5728;URL&#x4E2D;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x4E0D;&#x4F1A;&#x8D77;&#x4EFB;&#x4F55;&#x4F5C;&#x7528;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>ASCII &#x5B57;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>URL-&#x7F16;&#x7801;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NUL</td>
+<td>null character</td>
+<td>%00</td>
+</tr>
+<tr>
+<td>SOH</td>
+<td>start of header</td>
+<td>%01</td>
+</tr>
+<tr>
+<td>STX</td>
+<td>start of text</td>
+<td>%02</td>
+</tr>
+<tr>
+<td>ETX</td>
+<td>end of text</td>
+<td>%03</td>
+</tr>
+<tr>
+<td>EOT</td>
+<td>end of transmission</td>
+<td>%04</td>
+</tr>
+<tr>
+<td>ENQ</td>
+<td>enquiry</td>
+<td>%05</td>
+</tr>
+<tr>
+<td>ACK</td>
+<td>acknowledge</td>
+<td>%06</td>
+</tr>
+<tr>
+<td>BEL</td>
+<td>bell (ring)</td>
+<td>%07</td>
+</tr>
+<tr>
+<td>BS</td>
+<td>backspace</td>
+<td>%08</td>
+</tr>
+<tr>
+<td>HT</td>
+<td>horizontal tab</td>
+<td>%09</td>
+</tr>
+<tr>
+<td>LF</td>
+<td>line feed</td>
+<td>%0A</td>
+</tr>
+<tr>
+<td>VT</td>
+<td>vertical tab</td>
+<td>%0B</td>
+</tr>
+<tr>
+<td>FF</td>
+<td>form feed</td>
+<td>%0C</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>carriage return</td>
+<td>%0D</td>
+</tr>
+<tr>
+<td>SO</td>
+<td>shift out</td>
+<td>%0E</td>
+</tr>
+<tr>
+<td>SI</td>
+<td>shift in</td>
+<td>%0F</td>
+</tr>
+<tr>
+<td>DLE</td>
+<td>data link escape</td>
+<td>%10</td>
+</tr>
+<tr>
+<td>DC1</td>
+<td>device control 1</td>
+<td>%11</td>
+</tr>
+<tr>
+<td>DC2</td>
+<td>device control 2</td>
+<td>%12</td>
+</tr>
+<tr>
+<td>DC3</td>
+<td>device control 3</td>
+<td>%13</td>
+</tr>
+<tr>
+<td>DC4</td>
+<td>device control 4</td>
+<td>%14</td>
+</tr>
+<tr>
+<td>NAK</td>
+<td>negative acknowledge</td>
+<td>%15</td>
+</tr>
+<tr>
+<td>SYN</td>
+<td>synchronize</td>
+<td>%16</td>
+</tr>
+<tr>
+<td>ETB</td>
+<td>end transmission block</td>
+<td>%17</td>
+</tr>
+<tr>
+<td>CAN</td>
+<td>cancel</td>
+<td>%18</td>
+</tr>
+<tr>
+<td>EM</td>
+<td>end of medium</td>
+<td>%19</td>
+</tr>
+<tr>
+<td>SUB</td>
+<td>substitute</td>
+<td>%1A</td>
+</tr>
+<tr>
+<td>ESC</td>
+<td>escape</td>
+<td>%1B</td>
+</tr>
+<tr>
+<td>FS</td>
+<td>file separator</td>
+<td>%1C</td>
+</tr>
+<tr>
+<td>GS</td>
+<td>group separator</td>
+<td>%1D</td>
+</tr>
+<tr>
+<td>RS</td>
+<td>record separator</td>
+<td>%1E</td>
+</tr>
+<tr>
+<td>US</td>
+<td>unit separator</td>
+<td>%1F</td>
+</tr>
+</tbody>
+</table>
+<footer class="page-footer"><span class="copyright">Copyright @2020 by liuhangbiao.com all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-05-12 06:02:58
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tab-3.html" class="navigation navigation-prev " aria-label="Previous page: HTML ASCII 参考手册">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tab-5.html" class="navigation navigation-next " aria-label="Next page: javascript速查表">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTML URL 编码参考手册","level":"2.2.4","depth":2,"next":{"title":"javascript速查表","level":"2.2.5","depth":2,"path":"doc/table/tab-5.md","ref":"doc/table/tab-5.md","articles":[]},"previous":{"title":"HTML ASCII 参考手册","level":"2.2.3","depth":2,"path":"doc/table/tab-3.md","ref":"doc/table/tab-3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","github","github-buttons","donate","anchor-navigation-ex","code","hide-element","chapter-fold","splitter","pageview-count","tbfed-pagefooter","popup","sharing-plus"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright @2020 by liuhangbiao.com","modify_label":"最后修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/liuhangbiao"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"img/zfb-pay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"img/wx-pay.jpg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link"]},"pdf":{"pageNumbers":true,"fontSize":13,"margin":{"right":10,"left":10,"top":10,"bottom":15}},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"pageview-count":{},"github-buttons":{"buttons":[{"user":"liuhangbiao","repo":"webapp","type":"star","size":"small","count":true}]},"sharing":{"qq":true,"all":[],"douban":true,"facebook":false,"weibo":true,"whatsapp":true,"twitter":false,"pocket":true,"google":false,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"道心","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web前端-文档整理","language":"zh-hans","links":{"sidebar":{"道心博客":"https://dao.y26.net"},"gitbook":false,"sharing":{"google":false,"facebook":false,"twitter":false,"all":false}},"gitbook":"*","description":"web前端文档是一个包含html,css,js,svg,canvas等"},"file":{"path":"doc/table/tab-4.md","mtime":"2021-05-12T06:02:58.747Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-12T06:04:05.046Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
