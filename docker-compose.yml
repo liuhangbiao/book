@@ -1,0 +1,46 @@
+version: '3'
+services:
+  web:
+    image: node:10.23-alpine
+    container_name: book-server
+    user: root
+    working_dir: /book
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/book
+      - /book/node_modules
+    ports:
+      - 4000:4000
+    command:
+      - /bin/sh
+      - -c
+      - |
+        npm install gitbook-cli -g
+        gitbook install
+        sed -i 's@confirm: true@confirm: false@g' /root/.gitbook/versions/3.2.3/lib/output/website/copyPluginAssets.js
+        gitbook serve .
+    restart: always
+    # (默认只读)有写的权限
+    privileged: true 
+    networks:
+      - book-networks
+networks:
+   book-networks:
+     driver: bridge
+
+# ————————————————
+# gitbook init
+# gitbook install
+# gitbook build . ./dist  或 gitbook build
+# docker-compose build  //先打镜像
+# docker-compose up -d  //#-d是后台启动服务
+# docker-compose ps
+# docker-compose start/stop/restart
+# docker-compose down  //停止服务
+# docker logs -f 容器ID   //查看容器的日志
+# ————————————————
+# Error: ENOENT: no such file or directory, stat'...in-fontsettings\fontsettings.js'解决办法如:
+# 用户目录下找到以下文件.gitbook\versions\3.2.3\lib\output\website\copyPluginAssets.js
+# confirm: true => confirm: false
+# ————————————————
